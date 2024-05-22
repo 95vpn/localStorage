@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenido{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container--principal{
+    display: flex;
+    /* margin: 0 auto; */
+    flex-direction: column;
+}
+
+.container {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh; 
+    /* max-width: 960px; */
+    align-content: center;
+}
+
+.container-formulario{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .container-formulario{
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: 50%; */
+        justify-content: center;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    /* width: 1080px; */
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+/* .formulario textarea{
+    width: 300px;
+
+    transition: border 0.5s;
+} */
+
+.formulario input{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+
+    transition: border 0.5s;
+}
+
+.formulario input:focus{
+    border: 2px solid red;
+}
+
+.formulario textarea:focus{
+    border: 2px solid red;
+}
+
+.input{
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    margin: 0 auto;
+}
+.error{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-decoration: uppecase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.borrar-tweet,
+.borrar-tweet:hover{
+    float: right;
+    cursor: poiNter;
+    color: red;
+    font-weight: bold;
+
+}
+
+.mis-tweets{
+    
+}
+/* 
+.textarea{
+    min-width: 500px;
+    width: 80%;
+}
+.input{
+    width: 80%;
+} */
+
+.title {
+    position: relative;
+    top: -20px;
+}
+
+div .effect{
+    position: absolute;
+    top: 30px;
+    background: linear-gradient(100deg, rgb(45, 120, 154), rgb(224, 234, 231));
+    width: 200px;
+    height: 25px;
+    animation: skew 3s infinite;
+    transform: skew(5deg);
+    animation-direction: alternate;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px;
+}
+
+@keyframes skew {
+    0%{
+        transform: skew(10deg, 10deg);
+    }
+    100%{
+        transform: skew(-10deg, -10deg);
+    }
+}
+
