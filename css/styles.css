@@ -6,7 +6,7 @@ body {
     background: repeating-conic-gradient(from 45deg at 10% 50%, rgb(1, 44, 54) 0deg 10deg, rgb(58, 52, 34) 10deg 20deg, rgb(54, 53, 53) 20deg 30deg);
     color: bisque;
     height: 100vh;
-    animation: spin 10s linear infinite;
+    font-size: 20px;
 }
 
 #contenido{
