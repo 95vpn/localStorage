@@ -32,11 +32,11 @@ body {
 }
 
 .container-formulario{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
 }
 
 @media (min-width: 800px) {
@@ -45,7 +45,8 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* grid-template-rows: 50%; */
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         gap: 40px;
     }
 }
@@ -103,6 +104,7 @@ body {
     /* position: absolute; */
     background-color: antiquewhite;
     color: black;
+    transition: 0.5s ease-in-out;
 }
 
 
