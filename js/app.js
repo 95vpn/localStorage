@@ -85,7 +85,7 @@ function crearHTML() {
 
             // crear html
             const li = document.createElement('li');
-
+            li.classList.add('listas')
             //añadir el texto
             li.innerText = tweet.tweet
 
@@ -108,7 +108,9 @@ function sincronizarStorage() {
 //borrar Tweet
 function borrarTweet (id) {
     // console.log('borrando tweet')
+
     tweets = tweets.filter(tweet => tweet.id !== id);
+
     crearHTML();
     console.log(tweets)
 }

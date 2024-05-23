@@ -2,10 +2,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    background: repeating-conic-gradient(from 45deg at 10% 50%, rgb(1, 44, 54) 0deg 10deg, rgb(58, 52, 34) 10deg 20deg, rgb(54, 53, 53) 20deg 30deg);
+    color: bisque;
+    height: 100vh;
+    animation: spin 10s linear infinite;
 }
 
 #contenido{
-    padding: 20px;
+    padding: 60px;
     margin: 0 auto;
 }
 
@@ -41,6 +46,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         /* grid-template-rows: 50%; */
         justify-content: center;
+        gap: 40px;
     }
 }
 
@@ -51,6 +57,11 @@ body {
     gap: 1rem;
     width: 100%;
     justify-content: center;
+}
+
+.formulario--title{
+    font-size: 20px;
+    font-weight: bold;
 }
 /* .formulario textarea{
     width: 300px;
@@ -64,24 +75,37 @@ body {
     border: none;
     border-radius: 0.5rem;
     border: 2px solid transparent;
-
     transition: border 0.5s;
 }
 
 .formulario input:focus{
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .formulario textarea:focus{
     border: 2px solid red;
 }
 
+
+
 .input{
+    /* position: relative; */
     cursor: pointer;
     width: 30%;
     display: flex;
     margin: 0 auto;
+    background: none;
+    box-shadow: 0 0 5px beige;
+    color: aliceblue;
 }
+
+.input:hover{
+    /* position: absolute; */
+    background-color: antiquewhite;
+    color: black;
+}
+
+
 .error{
     background-color: red;
     text-align: center;
@@ -96,15 +120,46 @@ body {
 .borrar-tweet,
 .borrar-tweet:hover{
     float: right;
-    cursor: poiNter;
+    cursor: pointer;
     color: red;
     font-weight: bold;
 
 }
 
 .mis-tweets{
+    /* display: flex; */
+    list-style: none;
+}
+
+.mis-tweets li{
+    /* background-color: cadetblue; */
+    /* border: 1px solid black; */
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(163, 160, 153);
+    border-radius: 10px;
     
 }
+
+li .borrar-tweet{
+    /* padding: 5px; */
+    background-color: rgb(255, 255, 255);
+}
+
+#lista-tweets li{
+    display: flex;
+    justify-content: space-between;
+}
+
+li .listas{
+    display: flex;
+    padding: 10px;
+}
+
+.textarea{
+    font-size: 20px;
+}
+
+
 /* 
 .textarea{
     min-width: 500px;
