@@ -178,16 +178,16 @@ li .listas{
 
 div .effect{
     position: absolute;
-    top: 30px;
+    /* top: 30px; */
     /* background: linear-gradient(100deg, rgb(45, 120, 154), rgb(224, 234, 231));
     width: 200px;
     height: 25px; */
     animation: skew 3s infinite;
     transform: skew(5deg);
     animation-direction: alternate;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px;
+    /* padding: 30px; */
+    /* border-radius: 20px;
+    box-shadow: 0 0 15px; */
 }
 
 @keyframes skew {
